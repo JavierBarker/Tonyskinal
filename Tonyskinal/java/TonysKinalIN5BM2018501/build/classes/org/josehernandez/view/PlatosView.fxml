@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DisplacementMap?>
+<?import javafx.scene.effect.FloatMap?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="596.0" prefWidth="805.0" style="-fx-background-color: #99775a;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.josehernandez.controller.PlatosViewController">
+   <children>
+      <ImageView fx:id="imgRegresar" fitHeight="48.0" fitWidth="135.0" onMouseClicked="#tiposPlatos" onMouseEntered="#regresar" onMouseExited="#botonesNormales" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/regresar.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="79.0" fitWidth="172.0" layoutX="317.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/platos.png" />
+         </image>
+      </ImageView>
+      <GridPane layoutX="14.0" layoutY="94.0" prefHeight="131.0" prefWidth="326.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="203.0" minWidth="10.0" prefWidth="112.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="250.0" minWidth="10.0" prefWidth="214.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Label alignment="CENTER" prefHeight="27.0" prefWidth="96.0" style="-fx-background-color: #d1baa7;" text="Código Plato">
+               <font>
+                  <Font name="System Italic" size="14.0" />
+               </font>
+               <effect>
+                  <DisplacementMap wrap="true">
+                     <mapData>
+                        <FloatMap />
+                     </mapData>
+                  </DisplacementMap>
+               </effect>
+            </Label>
+            <Label alignment="CENTER" prefHeight="27.0" prefWidth="87.0" style="-fx-background-color: #d1baa7;" text="Cantidad" GridPane.rowIndex="1">
+               <font>
+                  <Font name="System Italic" size="14.0" />
+               </font>
+               <effect>
+                  <DisplacementMap wrap="true">
+                     <mapData>
+                        <FloatMap />
+                     </mapData>
+                  </DisplacementMap>
+               </effect>
+            </Label>
+            <Label alignment="CENTER" prefHeight="27.0" prefWidth="102.0" style="-fx-background-color: #d1baa7;" text="Nombre Plato" GridPane.rowIndex="2">
+               <font>
+                  <Font name="System Italic" size="14.0" />
+               </font>
+               <effect>
+                  <DisplacementMap wrap="true">
+                     <mapData>
+                        <FloatMap />
+                     </mapData>
+                  </DisplacementMap>
+               </effect>
+            </Label>
+            <TextField fx:id="txtCodigoPlato" GridPane.columnIndex="1" />
+            <TextField fx:id="txtCantidad" promptText="12345" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="txtNombrePlato" promptText="Ejemplo" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+         </children>
+      </GridPane>
+      <GridPane layoutX="361.0" layoutY="94.0" prefHeight="131.0" prefWidth="423.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="203.0" minWidth="10.0" prefWidth="133.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="290.0" minWidth="10.0" prefWidth="290.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Label alignment="CENTER" prefHeight="27.0" prefWidth="117.0" style="-fx-background-color: #d1baa7;" text="Descripción Plato">
+               <font>
+                  <Font name="System Italic" size="14.0" />
+               </font>
+               <effect>
+                  <DisplacementMap wrap="true">
+                     <mapData>
+                        <FloatMap />
+                     </mapData>
+                  </DisplacementMap>
+               </effect>
+            </Label>
+            <Label alignment="CENTER" prefHeight="27.0" prefWidth="94.0" style="-fx-background-color: #d1baa7;" text="Precio Plato " GridPane.rowIndex="1">
+               <font>
+                  <Font name="System Italic" size="14.0" />
+               </font>
+               <effect>
+                  <DisplacementMap wrap="true">
+                     <mapData>
+                        <FloatMap />
+                     </mapData>
+                  </DisplacementMap>
+               </effect>
+            </Label>
+            <Label alignment="CENTER" prefHeight="27.0" prefWidth="121.0" style="-fx-background-color: #d1baa7;" text="Código Tipo Plato" GridPane.rowIndex="2">
+               <font>
+                  <Font name="System Italic" size="14.0" />
+               </font>
+               <effect>
+                  <DisplacementMap wrap="true">
+                     <mapData>
+                        <FloatMap />
+                     </mapData>
+                  </DisplacementMap>
+               </effect>
+            </Label>
+            <TextField fx:id="txtDescripcionPlato" promptText="Ejemplo" GridPane.columnIndex="1" />
+            <TextField fx:id="txtPrecioPlato" promptText="000.00" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <ComboBox fx:id="cmbCodigoTipoPlato" prefHeight="25.0" prefWidth="188.0" style="-fx-background-color: FFFFFF;" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+         </children>
+      </GridPane>
+      <TableView fx:id="tblPlatos" layoutX="14.0" layoutY="255.0" onKeyPressed="#seleccionarElemento" onMouseClicked="#seleccionarElemento" prefHeight="251.0" prefWidth="766.0">
+         <columns>
+            <TableColumn fx:id="colCodigoPlato" prefWidth="84.0" text="Código Plato" />
+            <TableColumn fx:id="colCantidad" prefWidth="76.0" text="Cantidad" />
+            <TableColumn fx:id="colNombrePlato" prefWidth="139.0" text="Nombre Plato" />
+            <TableColumn fx:id="colDescripcionPlato" prefWidth="274.0" text="Descripción Plato" />
+            <TableColumn fx:id="colPrecioPlato" prefWidth="85.0" text="Precio Plato " />
+            <TableColumn fx:id="colCodigoTipoPlato" minWidth="5.0" prefWidth="107.0" text="Código Tipo Plato" />
+         </columns>
+      </TableView>
+      <Button fx:id="btnNuevo" layoutX="17.0" layoutY="532.0" mnemonicParsing="false" onAction="#nuevo" onMouseEntered="#botonNuevo" onMouseExited="#botonesNormales" prefHeight="50.0" prefWidth="135.0" style="-fx-background-color: #d1baa7;" text="Nuevo">
+         <font>
+            <Font name="System Italic" size="23.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnEliminar" layoutX="159.0" layoutY="532.0" mnemonicParsing="false" onAction="#eliminar" onMouseEntered="#botonEliminar" onMouseExited="#botonesNormales" prefHeight="50.0" prefWidth="135.0" style="-fx-background-color: #d1baa7;" text="Eliminar">
+         <font>
+            <Font name="System Italic" size="23.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnEditar" layoutX="511.0" layoutY="532.0" mnemonicParsing="false" onAction="#editar" onMouseEntered="#botonEditar" onMouseExited="#botonesNormales" prefHeight="50.0" prefWidth="135.0" style="-fx-background-color: #d1baa7;" text="Editar">
+         <font>
+            <Font name="System Italic" size="23.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnReporte" layoutX="654.0" layoutY="532.0" mnemonicParsing="false" onAction="#reporte" onMouseEntered="#botonReporte" onMouseExited="#botonesNormales" prefHeight="50.0" prefWidth="135.0" style="-fx-background-color: #d1baa7;" text="Reporte">
+         <font>
+            <Font name="System Italic" size="23.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

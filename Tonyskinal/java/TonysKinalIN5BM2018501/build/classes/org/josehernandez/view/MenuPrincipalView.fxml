@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="406.0" prefWidth="603.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.josehernandez.controller.MenuPrincipalViewController">
+   <children>
+      <ImageView fitHeight="429.0" fitWidth="609.0" layoutX="-3.0" layoutY="-5.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/fondo%20de%20tonyskinal3.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="211.0" fitWidth="315.0" layoutX="41.0" layoutY="54.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/tonys.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="211.0" fitWidth="315.0" layoutX="113.0" layoutY="181.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/kinal.png" />
+         </image>
+      </ImageView>
+      <MenuBar layoutX="318.0" layoutY="2.0" prefHeight="25.0" prefWidth="282.0" style="-fx-background-color: #d1baa7;">
+        <menus>
+          <Menu mnemonicParsing="false" text="Modulos">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#productos" text="Productos" />
+                  <MenuItem mnemonicParsing="false" onAction="#tiposPlatos" text="Tipo de Plato" />
+                  <MenuItem mnemonicParsing="false" onAction="#empresas" text="Empresas" />
+                  <MenuItem mnemonicParsing="false" onAction="#tiposEmpleados" text="Tipo empleado " />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Entidades de Unión">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#productos_has_platos" text="Productos_has_Platos " />
+                  <MenuItem mnemonicParsing="false" onAction="#servicios_has_platos" text="Servicios_has_Platos" />
+                  <MenuItem mnemonicParsing="false" onAction="#servicios_has_empleados" text="Servicios_has_Empleados" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Acerca de...">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#datosPersonales" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </children>
+</AnchorPane>

@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="ReportePresupuestoFinal" language="groovy" pageWidth="792" pageHeight="612" orientation="Landscape" columnWidth="752" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="9daeb54a-addf-4c4c-a0f5-6467ebc55f3f">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="codEmpresa" class="java.lang.Integer">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="SUBREPORT_DIR" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["C:\\Users\\Barker\\Documents\\NetBeansProjects\\TonysKinalIN5BM2018501\\src\\org\\josehernandez\\report\\"]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[call sp_ReportePresupuestoFinal ($P{codEmpresa});]]>
+	</queryString>
+	<field name="nombreEmpresa" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="direccion" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="telefono" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="fechaServicio" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="horaServicio" class="java.sql.Time">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="lugarServicio" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="telefonoContacto" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<image scaleImage="FillFrame">
+				<reportElement x="221" y="0" width="281" height="79" uuid="86662791-22a0-466b-91f4-027cb9e146c9"/>
+				<imageExpression><![CDATA["C:\\Users\\Barker\\Documents\\NetBeansProjects\\TonysKinalIN5BM2018501\\src\\org\\josehernandez\\img\\titulo de reporte (1).png"]]></imageExpression>
+			</image>
+			<image scaleImage="FillFrame">
+				<reportElement x="259" y="13" width="108" height="54" uuid="bcdc2fe4-0c73-4c38-af37-0fa69b2dc46f"/>
+				<imageExpression><![CDATA["C:\\Users\\Barker\\Documents\\NetBeansProjects\\TonysKinalIN5BM2018501\\src\\org\\josehernandez\\img\\tonys.png"]]></imageExpression>
+			</image>
+			<image scaleImage="FillFrame">
+				<reportElement x="367" y="13" width="104" height="54" uuid="447c44e9-2e6c-4b4f-9a75-92f0b72764ac"/>
+				<imageExpression><![CDATA["C:\\Users\\Barker\\Documents\\NetBeansProjects\\TonysKinalIN5BM2018501\\src\\org\\josehernandez\\img\\kinal.png"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="242" splitType="Stretch">
+			<staticText>
+				<reportElement x="207" y="10" width="308" height="38" uuid="02244c9f-b8bf-4a7c-9ba9-0c1dd20bf1fc"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic" size="25" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Reporte de Presupuesto]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="295" y="58" width="130" height="20" uuid="0fe06908-dfcc-426d-9826-31e031ac03b0"/>
+				<textElement>
+					<font fontName="Century Gothic" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Direccion Empresa]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="149" y="58" width="121" height="20" uuid="403ce616-c8ae-4e03-8b93-bdb1e0c55ae9"/>
+				<textElement>
+					<font fontName="Century Gothic" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Nombre Empresa]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="441" y="58" width="121" height="20" uuid="ebd2e35d-7013-4f26-9acf-c12bbab3148c"/>
+				<textElement>
+					<font fontName="Century Gothic" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Teléfono Empresa]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="149" y="88" width="121" height="20" uuid="b4abe1db-e0c8-46dd-9129-a14ba7180770"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nombreEmpresa}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="295" y="88" width="130" height="20" uuid="2b305449-ac1d-4b39-a05d-c5b8e0d069f5"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{direccion}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="441" y="88" width="121" height="20" uuid="1f75e62c-e25b-4874-87d3-da99241ce989"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{telefono}]]></textFieldExpression>
+			</textField>
+			<subreport>
+				<reportElement x="0" y="125" width="752" height="100" uuid="2efb2f11-177c-4f3f-acc3-7d52d608a15a"/>
+				<subreportParameter name="codEmpresa">
+					<subreportParameterExpression><![CDATA[$P{codEmpresa}]]></subreportParameterExpression>
+				</subreportParameter>
+				<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+				<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "SubReportePresupuestoFinal.jasper"]]></subreportExpression>
+			</subreport>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<image scaleImage="FillFrame">
+				<reportElement x="0" y="0" width="752" height="61" uuid="69a2d939-c0a4-4ad2-83ce-b5b99a3501a2"/>
+				<imageExpression><![CDATA["C:\\Users\\Barker\\Documents\\NetBeansProjects\\TonysKinalIN5BM2018501\\src\\org\\josehernandez\\img\\colum heather.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="20" y="22" width="129" height="20" uuid="0dc35f6f-434d-4bcf-9566-7cedf1bd57c7"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Century Gothic" size="14" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Fecha Servicio]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="221" y="22" width="115" height="20" uuid="5c19b5b6-d7a2-4105-af72-401237584612"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Century Gothic" size="14" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Hora Servicio]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="402" y="22" width="115" height="20" uuid="b9be4db1-fa64-4ceb-b37a-e6de37b3e324"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Century Gothic" size="14" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Lugar Servicio]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="590" y="22" width="144" height="20" uuid="56d83989-c3a9-495e-b71d-5193586535a5"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Century Gothic" size="14" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Telefono Contacto]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="56" splitType="Stretch">
+			<textField>
+				<reportElement x="31" y="13" width="100" height="20" uuid="a49b3df1-e352-40ba-a7e4-0187597216a9"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{fechaServicio}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="236" y="13" width="100" height="20" uuid="3731a225-7982-4085-bc63-3eb787f85b8a"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{horaServicio}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="415" y="13" width="100" height="20" uuid="6c76a318-649e-4a47-8b6e-ab7e35b81fec"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{lugarServicio}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="609" y="13" width="125" height="20" uuid="14538c84-ba5d-4cd9-a113-249d802d5882"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Century Gothic"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{telefonoContacto}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="0" y="46" width="752" height="1" forecolor="#996600" uuid="4dab00be-4224-4014-8b8c-f62d7b6afc8e"/>
+				<graphicElement>
+					<pen lineStyle="Dashed"/>
+				</graphicElement>
+			</line>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch">
+			<image scaleImage="FillFrame">
+				<reportElement x="0" y="0" width="752" height="54" uuid="7de9af0d-5e6f-4a01-8fc4-389ca8cc109d"/>
+				<imageExpression><![CDATA["C:\\Users\\Barker\\Documents\\NetBeansProjects\\TonysKinalIN5BM2018501\\src\\org\\josehernandez\\img\\page footer.png"]]></imageExpression>
+			</image>
+		</band>
+	</pageFooter>
+</jasperReport>

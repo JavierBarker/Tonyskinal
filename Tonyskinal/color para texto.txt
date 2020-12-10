@@ -1,0 +1,53 @@
+100 de tamaño
+
+logo
+#1C0303
+#FADA8E
+#EDDDB4
+
+regresar
+#1C0303
+#FFF7E3
+#F5E6BC
+
+fondo de las vistas
+#99775a
+
+fondo de botones y labels
+#d1baa7
+efecto hover = #B38D6B
+
+
+
+imgRegresar
+txtCodigoS_H_E
+cmbCodigoServicio
+cmbCodigoEmpleado
+grpFechaEvento
+txtHoraEvento
+txtLugarEvento
+tblServiciosHasEmpleados
+colCodigoS_H_E
+colCodigoServicio
+colCodigoEmpleado
+colFechaEvento
+colHoraEvento
+colLugarEvento
+btnNuevo
+btnEliminar
+btnEditar
+btnReporte
+
+-reportes
+-entidades has
+-manuales
+FFFFFF
+
+
+-colocar en los txt de todas las entidades un ejemplo de los datos a ingresar
+-colocar mensaje si no tiene nada en los txt al momento de generar los reportes
+
+Ejemplo
+12345
+HH:MM:SS
+
